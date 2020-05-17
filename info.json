@@ -1,0 +1,13 @@
+{
+    "project": [
+        {
+            "author": "Michael Peters",
+            "projectName": "ShortLink",
+            "version": "1.0.0",
+            "description": "A simple link shortener built with express.js",
+            "longDescription": "A link shortener that is used to redirect long links in a media acceptable format",
+            "githubLink": "https://github.com/michaelpeterswa/ShortLink",
+            "date": "05.17.2020"
+        }
+    ]
+}
