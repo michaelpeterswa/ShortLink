@@ -1,0 +1,9 @@
+node_modules/
+
+src/secrets.js
+#if necessary
+
+db/links.sqlite
+
+npm-debug.log
+

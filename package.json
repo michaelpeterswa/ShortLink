@@ -1,0 +1,24 @@
+{
+  "name": "shortlink",
+  "version": "1.0.0",
+  "description": "A basic link shortener",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "build": "scripts/docker_build.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaelpeterswa/ShortLink.git"
+  },
+  "keywords": [
+    "link",
+    "shortener"
+  ],
+  "author": "Michael Peters",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/michaelpeterswa/ShortLink/issues"
+  },
+  "homepage": "https://github.com/michaelpeterswa/ShortLink#readme"
+}

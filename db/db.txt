@@ -1,0 +1,6 @@
+////
+
+Location of sqlite3 db
+Hidden through gitignore
+
+////
