@@ -1,4 +1,4 @@
-// ShortLink
+// ShortLink v1.0.0
 // Michael Peters
 
 const express = require('express')
@@ -11,7 +11,6 @@ const NodeCache = require('node-cache')
 
 // port the app is currently serving to
 const app_port = 6981
-
 
 const app = express()
 app.set('view engine', 'ejs');
