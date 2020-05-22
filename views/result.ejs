@@ -10,7 +10,7 @@
     <title>ShortLink</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer/">
-
+    <script src="https://kit.fontawesome.com/3b6b14c0f4.js" crossorigin="anonymous"></script>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
 
@@ -24,14 +24,16 @@
     <main role="main" class="container">
       <h1 class="mt-5">ShortLink</h1>
       <br>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+      <script>new ClipboardJS('.btn');</script>
       <div class="alert alert-success" role="alert">
-        Your shortened URL: <%= link %>
-      </div>
-      <div class="alert alert-success" role="alert">
+        Your shortened URL: 
         <div class="input-group mb-3">
-          <input id="foo" value="<%= link %>">
+          <input id="lnk" value="<%= link %>">
             <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="submit">Submit</button>
+              <button class="btn btn-outline-secondary" data-clipboard-action="copy" data-clipboard-target="#lnk">
+                <i class="fas fa-clipboard"></i>
+              </button>
           </div>
         </div>
       </div>
