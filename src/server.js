@@ -36,7 +36,7 @@ function createID (full_url) {
 }
 
 function sendToDatabase (data) {
-    console.log(`Sending to Database: ${data.id}`)
+    console.log(`Sending to Database: ${data.id}\n`)
     var stmt = db.prepare(`INSERT INTO links ("url", "id") VALUES ('${data.url}', '${data.id}')`)
     stmt.run()
 }
@@ -44,7 +44,7 @@ function sendToDatabase (data) {
 function sendToCache (data) {
     console.log(`Sending to Cache: ${data.id}`)
     // cache key is data.id, object is data, ttl is 10k
-    //linkCache.set(data.id, data, 10000)
+    linkCache.set(data.id, data, 10000)
 }
 
 function getFromCache (id) {
@@ -132,7 +132,7 @@ app.get('/:passed_shortid', function(req, res) {
 
     var result = recieveRequest(id)
     if(result != false) {
-        console.log(`Redirecting to: ${result.url}`)
+        console.log(`Redirecting to: ${result.url}\n`)
         res.redirect(result.url)
     }
     else {
