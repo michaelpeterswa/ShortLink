@@ -20,5 +20,16 @@
   "bugs": {
     "url": "https://github.com/michaelpeterswa/ShortLink/issues"
   },
-  "homepage": "https://github.com/michaelpeterswa/ShortLink#readme"
+  "homepage": "https://github.com/michaelpeterswa/ShortLink#readme",
+  "dependencies": {
+    "better-sqlite3": "^7.0.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "node-cache": "^5.1.0",
+    "nodemon": "^2.0.4",
+    "path": "^0.12.7",
+    "shortid": "^2.2.15",
+    "socket.io": "^2.3.0"
+  }
 }
