@@ -8,12 +8,17 @@ A simple link shortener built with express.js
 ## Installation
 ```
 git clone https://github.com/michaelpeterswa/ShortLink.git
+cd ShortLink
+npm install
+npm start
+
+then go to localhost:6981/
 ```
 Or download the file manually.
 ## Release History
 * 1.0.0
    * Opened Repository (05.17.2020)
 ## Meta
-Michael Peters - *enter additional contact information here*
+Michael Peters - *michael@michaelpeterswa.com*
 
 Distributed under the ____ license. See ``LICENSE`` for more information.
