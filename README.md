@@ -3,7 +3,7 @@ A simple link shortener built with express.js
 > A link shortener that is used to redirect long links in a media acceptable format
 
 ## Demonstration
-[![asciicast](https://asciinema.org/a/YzNfwwjNwuBQVwKK2Xtwh5ZUL.svg)](https://asciinema.org/a/YzNfwwjNwuBQVwKK2Xtwh5ZUL?speed=2)
+[![asciicast](https://asciinema.org/a/YzNfwwjNwuBQVwKK2Xtwh5ZUL.svg)](https://asciinema.org/a/YzNfwwjNwuBQVwKK2Xtwh5ZUL?autoplay=1&speed=2&rows=26)
 
 ## Installation
 ```
