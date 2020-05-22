@@ -8,18 +8,15 @@ const bp = require('body-parser');
 const shortid = require('shortid')
 const db = require('better-sqlite3')('./db/links.sqlite3')
 const NodeCache = require('node-cache')
-const app = express()
-const socket_server = require('http').Server(app);
-const io = require('socket.io')(socket_server);
 
 // port the app is currently serving to
 const app_port = 6981
-const socket_port = 6982
+
+
+const app = express()
+app.set('view engine', 'ejs');
 
 const linkCache = new NodeCache();
-
-// for socket.io
-socket_server.listen(socket_port)
 
 // for better-sqlite3
 db.prepare("CREATE TABLE IF NOT EXISTS links (url TEXT, id TEXT)").run()
@@ -106,7 +103,7 @@ app.use(bp.urlencoded({
   }));
 
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname + '/../html/index.html'));
+    res.render('index')
   });
 
 app.get('/css/bootstrap.css', function(req, res) {
@@ -122,11 +119,10 @@ app.get('/css/sticky-footer.css', function(req, res) {
 app.post('/api', (req, res) => {
     const full_url = req.body.url
     createID(full_url)
+    var completed_link = `localhost:6981/${link_data.id}`
     sendToCache(link_data)
     sendToDatabase(link_data)
-    res.redirect('/')
-    displayResult(link_data)
-    res.end()
+    res.render('result', {link: completed_link })
   })
 
 app.get('/:passed_shortid', function(req, res) {
@@ -141,7 +137,7 @@ app.get('/:passed_shortid', function(req, res) {
     }
     else {
         console.log("Returning a 404")
-        res.status(404).sendFile(path.join(__dirname + '/../html/404.html'));
+        res.status(404).render('404');
     }
   });
 
