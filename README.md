@@ -1,6 +1,10 @@
 # ShortLink
 A simple link shortener built with express.js
 > A link shortener that is used to redirect long links in a media acceptable format
+
+## Demonstration
+[![asciicast](https://asciinema.org/a/YzNfwwjNwuBQVwKK2Xtwh5ZUL.svg)](https://asciinema.org/a/YzNfwwjNwuBQVwKK2Xtwh5ZUL)
+
 ## Installation
 ```
 git clone https://github.com/michaelpeterswa/ShortLink.git
