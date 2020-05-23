@@ -1,6 +1,6 @@
 # ShortLink
 
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/michaelpeterswa/ShortLink) [![Maintainability](https://api.codeclimate.com/v1/badges/b700f20d0fe7eae8cd50/maintainability)](https://codeclimate.com/github/michaelpeterswa/ShortLink/maintainability) ![GitHub language count](https://img.shields.io/github/languages/count/michaelpeterswa/ShortLink) ![GitHub last commit](https://img.shields.io/github/last-commit/michaelpeterswa/ShortLink)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/michaelpeterswa/ShortLink) [![Maintainability](https://api.codeclimate.com/v1/badges/b700f20d0fe7eae8cd50/maintainability)](https://codeclimate.com/github/michaelpeterswa/ShortLink/maintainability) ![GitHub language count](https://img.shields.io/github/languages/count/michaelpeterswa/ShortLink) ![GitHub last commit](https://img.shields.io/github/last-commit/michaelpeterswa/ShortLink) ![Docker Pulls](https://img.shields.io/docker/pulls/michaelpeterswa/shortlink)
 
 A simple link shortener built with express.js
 > A link shortener that is used to redirect long links in a media acceptable format
